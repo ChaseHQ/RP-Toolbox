@@ -18,6 +18,8 @@
 		3C6E8B901C35D67900FE2A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E8B8E1C35D67900FE2A02 /* Main.storyboard */; };
 		3C6E8B921C35D67900FE2A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E8B911C35D67900FE2A02 /* Assets.xcassets */; };
 		3C6E8B951C35D67900FE2A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E8B931C35D67900FE2A02 /* LaunchScreen.storyboard */; };
+		BFFEA17F1E4039140051F311 /* EotERoller.htm in Resources */ = {isa = PBXBuildFile; fileRef = BFFEA17E1E4039140051F311 /* EotERoller.htm */; };
+		BFFEA1821E403CA10051F311 /* OddsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFEA1811E403CA10051F311 /* OddsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		3C6E8B9B1C35D67900FE2A02 /* RP-ToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RP-ToolboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6E8BA11C35D67900FE2A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C6E8BA61C35D67900FE2A02 /* RP-ToolboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RP-ToolboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFEA17E1E4039140051F311 /* EotERoller.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EotERoller.htm; sourceTree = "<group>"; };
+		BFFEA1801E403CA10051F311 /* OddsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OddsViewController.h; sourceTree = "<group>"; };
+		BFFEA1811E403CA10051F311 /* OddsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OddsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,8 @@
 				3C6E414E1C36C7E500CBDE44 /* AddCharacterViewController.h */,
 				3C6E414F1C36E6D300CBDE44 /* RollInitiativeCharacter.m */,
 				3C187E451C36E84300BA8F4B /* RollInitiativeCharacter.h */,
+				BFFEA1801E403CA10051F311 /* OddsViewController.h */,
+				BFFEA1811E403CA10051F311 /* OddsViewController.m */,
 			);
 			name = RollInitiative;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 		3C6E8B851C35D67900FE2A02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFFEA17E1E4039140051F311 /* EotERoller.htm */,
 				3C6E8B861C35D67900FE2A02 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -222,7 +230,8 @@
 				TargetAttributes = {
 					3C6E8B811C35D67800FE2A02 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = Z2D7EVGKW7;
+						DevelopmentTeam = 3BW9B69GL7;
+						ProvisioningStyle = Automatic;
 					};
 					3C6E8B9A1C35D67900FE2A02 = {
 						CreatedOnToolsVersion = 7.2;
@@ -261,6 +270,7 @@
 			files = (
 				3C6E8B951C35D67900FE2A02 /* LaunchScreen.storyboard in Resources */,
 				3C6E8B921C35D67900FE2A02 /* Assets.xcassets in Resources */,
+				BFFEA17F1E4039140051F311 /* EotERoller.htm in Resources */,
 				3C6E8B901C35D67900FE2A02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFEA1821E403CA10051F311 /* OddsViewController.m in Sources */,
 				3C6E414D1C36C7BA00CBDE44 /* AddCharacterViewController.m in Sources */,
 				3C6E8B8A1C35D67900FE2A02 /* AppDelegate.m in Sources */,
 				3C6E41501C36E6D300CBDE44 /* RollInitiativeCharacter.m in Sources */,
@@ -433,6 +444,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3BW9B69GL7;
 				INFOPLIST_FILE = "RP-Toolbox/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -446,6 +459,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3BW9B69GL7;
 				INFOPLIST_FILE = "RP-Toolbox/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
